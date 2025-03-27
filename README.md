@@ -72,5 +72,5 @@ You can [open an issue here](https://github.com/mahtab2003/Xera/issues/new) if y
 If you like project Xera, please donate [here](https://xera.eu.org/DONATE.md).
 
 ## ©️ Copyright
-This build is created and maintained by [Mehtab Hassan](https://github.com/mahtab2003). Code released under [the GPL-2.0 license](LICENSE).
-<a href="//www.dmca.com/Protection/Status.aspx?ID=907c042a-ab9d-4d7b-8638-25d88c2ff2aa" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120b.png?ID=907c042a-ab9d-4d7b-8638-25d88c2ff2aa"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+This build is created and maintained by [Mehtab Hassan](https://github.com/mahtab2003). Code released under [the GPL-2.0 license](LICENSE).<br>
+<a href="//www.dmca.com/Protection/Status.aspx?ID=907c042a-ab9d-4d7b-8638-25d88c2ff2aa" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120b.png?ID=907c042a-ab9d-4d7b-8638-25d88c2ff2aa"  alt="DMCA.com Protection Status" /></a>
