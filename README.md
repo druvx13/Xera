@@ -60,6 +60,7 @@ The installation of Xera is much easier than you think!
 - Replace the logo and favicon located in ```assets/default/img/``` with your own.
 - Setup SMTP (see below for some services you can use).
 - Refer to [Setup Guide](Setup-Guide.md)
+- For users on cPanel with terminal access looking to set up or modernize an existing installation (including Composer and frontend library updates), please refer to the [cPanel Setup Guide](CPANEL_SETUP.md).
 
 ### 📧 SMTP
 Here are some widely used SMTP services. They have free plans with some limitations; most importantly, though, they are compatible with Xera.
