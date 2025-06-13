@@ -189,7 +189,7 @@ function LookUpDomain($domain){
 	if(!$whoIsResult) {
 		return "Error: No results retrieved from $whoIsServer server for $domain domain!";
 	} else {
-		while(strpos($whoIsResult, "Whois Server:") !== FALSE){
+		while(str_contains($whoIsResult, "Whois Server:")){
 			preg_match("/Whois Server: (.*)/", $whoIsResult, $matches);
 			$secondary = $matches[1];
 			if($secondary) {
@@ -220,7 +220,7 @@ function getWhoisServerDetails($whoIsServer, $domain) {
 	}
 	fclose($whoIsInfo);
 	$whosIsResults = "";
-	if((strpos(strtolower($output), "error") === FALSE) && (strpos(strtolower($output), "not allocated") === FALSE)) {
+	if((!str_contains(strtolower($output), "error")) && (!str_contains(strtolower($output), "not allocated"))) {
 		$whoIsRecords = explode("\n", $output);
 		foreach($whoIsRecords as $whoIsRecord) {
 			$whoIsRecord = trim($whoIsRecord);

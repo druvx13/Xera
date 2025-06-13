@@ -31,7 +31,7 @@ class C extends CI_Controller
 			];
 			$logs[] = $callback;
 			file_put_contents(APPPATH.'logs/mofh_callback.json', json_encode($logs));
-			if(substr($status, 0, 3) === 'sql')
+			if(str_starts_with($status, 'sql'))
 			{
 				$this->account->set_sql_server($username, $status);
 			}
