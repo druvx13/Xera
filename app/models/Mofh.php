@@ -378,11 +378,11 @@ class Mofh extends CI_Model
 		{
 			return false;
 		}
-		if(strpos($domain, '.') === false)
+		if(!str_contains($domain, '.'))
 		{
 			return false;
 		}
-		if(strpos($domain, '.') !== 0)
+		if(!str_starts_with($domain, '.'))
 		{
 			$domain = '.'.$domain;
 		}

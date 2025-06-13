@@ -2,7 +2,7 @@
     <img src="assets/default/img/xera.png">
 </div>
 
-> **Note:**  
+> **Note:**
 > **This development of this build is live again.**
 > A bugfix release is coming due to the currently known errors.
 > Pull requests are welcome and will still be accepted. If you'd like to see a feature, feel free to contribute it.
@@ -18,6 +18,9 @@ Xera is a hosting account and support management system specially designed to wo
 ![AppVeyor](https://img.shields.io/badge/Development-Live-brightgreen)
 ![AppVeyor](https://img.shields.io/badge/Dependencies-PHP,_MySQL,_cUrl-red)
 
+### ✨ Modernization
+This version of Xera has been updated to run on PHP 8.0+ and includes refreshed frontend libraries (such as Tabler, Font Awesome 6, jQuery 3.x, and ApexCharts) for a more current and secure experience.
+
 ### 🎮 Features
 - User Management
 - Theme Management
@@ -25,12 +28,12 @@ Xera is a hosting account and support management system specially designed to wo
 - Administrative Access
 - Integration With:
 	- MOFH (MyOwnFreeHost)
-	- Google reCAPTCHA 
+	- Google reCAPTCHA
 	- CryptoLoot
 	- hCaptcha
-  	- Cloudflare Turnstile
+	- Cloudflare Turnstile
 	- GoGetSSL (No support after March 10, 2025)
- 	- ACMEv2 (Let's Encrypt, ZeroSSL)
+	- ACMEv2 (Let's Encrypt, ZeroSSL)
 	- SitePro
 	- SMTP
 - Update Manager
@@ -40,27 +43,28 @@ Xera is a hosting account and support management system specially designed to wo
 
 ### 🚅 Requirements
 Your server needs to meet the following minimum requirements to run Xera:
-- PHP v8.1 or above.
+- PHP v8.0 or above (Tested with PHP 8.1).
+- Underlying Framework: CodeIgniter 3.1.11 (compatible with PHP 8).
 - MySQL v5.7 or above.
 - A valid, trusted SSL certificate.
 
-### 💾 Installation 
+### 💾 Installation
 The installation of Xera is much easier than you think!
 - Download the Xera installation files [here](https://github.com/mahtab2003/Xera/releases/latest). Alternatively, if you want the latest development version, you can get it [here](https://github.com/mahtab2003/Xera/archive/refs/heads/dev.zip).
-- Extract the file and upload the contents to your web hosting account. 
+- Extract the file and upload the contents to your web hosting account.
 - Create a new database for Xera.
 - Go to ```https://{your.domain}/{xera-directory}/install.php``` and click on the 'Get Started' button.
 - Set your website's ```Website URL```, ```Cookie Prefix```, enable ```CSRF Protection``` and hit the 'Next Step' button.
 - Edit the database credentials and click on the 'Next Step' button (this will automatically import tables and records to the database).
-- Register an admin account and log in to your admin panel. 
+- Register an admin account and log in to your admin panel.
 - Replace the logo and favicon located in ```assets/default/img/``` with your own.
 - Setup SMTP (see below for some services you can use).
 - Refer to [Setup Guide](Setup-Guide.md)
 
 ### 📧 SMTP
 Here are some widely used SMTP services. They have free plans with some limitations; most importantly, though, they are compatible with Xera.
-- [Mailgun](https://www.mailgun.com/). 
-> **Note**  
+- [Mailgun](https://www.mailgun.com/).
+> **Note**
 > Mailgun seems to offer only a trial plan for a month, and without adding a credit card, you are only authorized to send emails to 5 recipients. Therefore, you may want to choose another service.
 - [Mailjet](https://mailjet.com/).
 - [SendGrid](https://sendgrid.com/free/).
