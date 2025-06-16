@@ -346,7 +346,7 @@ class acme extends CI_Model
                 }
             }
         } catch (Throwable $e) {
-            if (str_contains($e->getMessage(), 'authorization must be pending')) {
+            if (strpos($e->getMessage(), 'authorization must be pending') !== false) {                
                 $res = $this->base->update(
                     ['status' => 'cancelled'],
                     ['key' => $key],
